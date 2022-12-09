@@ -1,0 +1,7 @@
+shop:
+  not-found: '§c未找到该商店'
+item:
+  not-found: '§c未找到该物品'
+  can-not-buy: '§c§l[ERROR]§r§c 该物品出错了，请联系服主'
+  can-not-sell: '§c§l[ERROR]§r§c 该物品出错了，请联系服主'
+  material-not-found: '§c§l[ERROR]§r§c 材质未找到：§4§l%s '

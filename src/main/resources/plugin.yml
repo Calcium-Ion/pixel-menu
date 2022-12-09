@@ -1,0 +1,12 @@
+name: PixelMenu
+main: work.caion.plugin.pixelmenu.PixelMenu
+author: CaIon
+version: 1.0
+depend:
+  - Vault
+softdepend:
+  - PlayerPoints
+  - PixelCorePlugin
+  - PlaceholderAPI
+commands:
+  pmenu:
