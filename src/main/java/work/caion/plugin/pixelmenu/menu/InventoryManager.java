@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class InventoryManager implements Listener {
 
-    private final HashMap<String, ShopInventory> playerOpenedInventory;
+    private final HashMap<String, MenuInventory> playerOpenedInventory;
 
     public InventoryManager() {
         playerOpenedInventory = new HashMap<>();
@@ -31,7 +31,7 @@ public class InventoryManager implements Listener {
     public Inventory openInventory(Player player, Menu menu) {
         Inventory inventory = generateInventory(player, menu);
         player.openInventory(inventory);
-        playerOpenedInventory.put(player.getName(), new ShopInventory(menu, inventory));
+        playerOpenedInventory.put(player.getName(), new MenuInventory(menu, inventory));
         return inventory;
     }
 

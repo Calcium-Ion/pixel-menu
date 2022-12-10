@@ -3,24 +3,22 @@ package work.caion.plugin.pixelmenu.type;
 import lombok.Getter;
 
 @Getter
-public enum EnumClickAction {
+public enum EnumActionType {
 
-    BUY_ITEM("buyItem"),
-    SELL_ITEM("sellItem"),
-    SAME("same"),
+    GIVE_ITEM("giveItem"),
+    TAKE_ITEM("takeItem"),
     RUN_COMMAND("runCommand"),
     NONE("none"),
     ;
 
     private String action;
 
-    EnumClickAction(String action) {
+    EnumActionType(String action) {
         this.action = action;
     }
 
-    //get the enum from the action string
-    public static EnumClickAction getEnum(String action) {
-        for (EnumClickAction e : EnumClickAction.values()) {
+    public static EnumActionType getEnum(String action) {
+        for (EnumActionType e : EnumActionType.values()) {
             if (e.getAction().equals(action)) {
                 return e;
             }

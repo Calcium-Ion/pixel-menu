@@ -7,20 +7,20 @@ import work.caion.plugin.pixelmenu.util.PlayerUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShopManager {
+public class MenuManager {
 
     private List<Menu> menus;
 
-    private static ShopManager instance;
+    private static MenuManager instance;
 
-    public static ShopManager getInstance() {
+    public static MenuManager getInstance() {
         if (instance == null) {
-            instance = new ShopManager();
+            instance = new MenuManager();
         }
         return instance;
     }
 
-    public ShopManager() {
+    public MenuManager() {
         //TODO: load shops from PixelWeb
         menus = new ArrayList<>();
     }

@@ -4,13 +4,13 @@ import lombok.Data;
 import org.bukkit.inventory.Inventory;
 
 @Data
-public class ShopInventory {
+public class MenuInventory {
 
     private Menu menu;
 
     private Inventory inventory;
 
-    public ShopInventory(Menu menu, Inventory inventory) {
+    public MenuInventory(Menu menu, Inventory inventory) {
         this.menu = menu;
         this.inventory = inventory;
     }

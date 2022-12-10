@@ -5,7 +5,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import work.caion.plugin.pixelmenu.config.ConfigManager;
-import work.caion.plugin.pixelmenu.menu.ShopManager;
+import work.caion.plugin.pixelmenu.menu.MenuManager;
 
 public class PixelMenu extends JavaPlugin {
 
@@ -38,6 +38,6 @@ public class PixelMenu extends JavaPlugin {
     }
 
     public void openShop(Player player, String shopName) {
-        ShopManager.getInstance().openShop(player, shopName);
+        MenuManager.getInstance().openShop(player, shopName);
     }
 }
