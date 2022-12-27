@@ -19,11 +19,13 @@ public abstract class Action {
     ClickType clickType;
     //条件
     Condition condition;
+    //是否启用
+    boolean enabled;
     //动作
     Consumer<Player> consumer;
 
     public void action(Player player) {
-        if (condition.check(player)) {
+        if (enabled && condition.check(player)) {
             consumer.accept(player);
         }
     }

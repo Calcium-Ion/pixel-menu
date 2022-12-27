@@ -1,0 +1,71 @@
+{
+  "action": "updateMenuSingle",
+  "Menu": {
+    "name": "My Menu",
+    "title": "§6My Menu",
+    "line": 1,
+    "items": [
+      {
+        "slot": 1,
+        "item": "minecraft:dirt",
+        "name": "§6Dirt",
+        "amount": 1,
+        "lore": [
+          "§7Price: §a10 §6Point"
+        ],
+        "enchantments": [
+          {
+            "enchantment": "minecraft:protection",
+            "level": 1
+          }
+        ],
+        "flags": [
+          "HIDE_ENCHANTS"
+        ],
+        "events": {
+          "left": {
+            "condition": [
+              {
+                "type": "HAS_ITEM",
+                "checkLore": true,
+                "items": [
+                  {
+                    "item": "minecraft:stone",
+                    "amount": 1
+                  },
+                  {
+                    "item": "minecraft:dirt",
+                    "amount": 1
+                  }
+                ]
+              }
+            ],
+            "actions": [
+              {
+                "type": "RUN_COMMAND",
+                "command": [
+                  "eco take %player% 10",
+                  "tell %player% You bought 1 dirt for 10 points"
+                ]
+              },
+              {
+                "type": "GIVE_ITEM",
+                "items": [
+                  {
+                    "item": "minecraft:stone",
+                    "amount": 1
+                  },
+                  {
+                    "item": "minecraft:dirt",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+
+    ]
+  }
+}
